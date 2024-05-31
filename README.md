@@ -1,0 +1,2 @@
+# StoreSalesKaggle
+Desafio do Kaggle
