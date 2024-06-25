@@ -1,0 +1,2511 @@
+###### MODELO 20240611-0936 ######
+
+Registro gerado em 11-06-2024 10:49, score Kaggle:
+Modelo utilizado salvo como 'modelo20240611-0936.json'
+Scores obtidos no controle: [0.5273599258357902, 0.20424100626124483, 0.20443623641182707, 0.6743924000063943, 0.2645404674076897]
+
+Features utilizadas no modelo: ['store_nbr' 'family' 'onpromotion' 'gasolina' 'ticket_medio' 'pgto'
+ 'f_nacional' 'f_regional' 'f_local' 'dia_da_semana' 'mes_do_ano'
+ 'trimestre' 'sales_lag15' 'sales_lag10' 'sales_lag5' 'diff15' 'diff10'
+ 'diff5' 'mmovel15' 'mmovel30' 'mmovel60' 'mmovel90']
+
+Features sem importância: ['f_nacional' 'f_regional' 'trimestre' 'mmovel15' 'mmovel60' 'mmovel90']
+
+Parâmetros do modelo:
+           base_score: 0.5
+              booster: gbtree
+         n_estimators: 2500
+early_stopping_rounds: 100
+            objective: reg:squarederror
+            max_depth: 4
+        learning_rate: 0.01
+   enable_categorical: True
+                feval: 'rmsle' (função definida manualmente)
+               device: gpu
+  validade_parameters: True
+
+=======================================================================
+
+
+###### MODELO 20240611-1304 ######
+
+Registro gerado em 11-06-2024 13:24, score Kaggle:
+Modelo utilizado salvo como 'modelo20240611-1304.json'
+Scores obtidos no controle: [0.48678067007523296, 0.22211648620875557, 0.20009126007967898, 0.5572271328316707, 0.26652743779331506]
+
+Features utilizadas no modelo: ['store_nbr' 'family' 'onpromotion' 'store_type' 'cluster' 'gasolina'
+ 'ticket_medio' 'pgto' 'dia_da_semana' 'mes_do_ano' 'sales_lag15'
+ 'sales_lag10' 'sales_lag5' 'diff15' 'diff10' 'diff5' 'mmovel45']
+
+Não foram identificadas features sem importância 
+
+Parâmetros do modelo:
+           base_score: 0.5
+              booster: gbtree
+         n_estimators: 3000
+early_stopping_rounds: 100
+            objective: reg:squarederror
+            max_depth: 4
+        learning_rate: 0.01
+   enable_categorical: True
+                feval: 'rmsle' (função definida manualmente)
+               device: gpu
+  validade_parameters: True
+
+=======================================================================
+
+
+###### MODELO 20240611-1403 ######
+
+Registro gerado em 11-06-2024 14:07, score Kaggle:
+Modelo utilizado salvo como 'modelo20240611-1403.json'
+Scores obtidos no controle: [0.38471910306916546, 0.3234788391699736, 0.16473770311192035, 0.743857646963747, 0.26449236180740976]
+
+Features utilizadas no modelo: ['sales_lag15' 'sales_lag10' 'sales_lag5' 'diff15' 'diff10' 'diff5']
+
+Não foram identificadas features sem importância. 
+
+Parâmetros do modelo:
+           base_score: 0.5
+              booster: gbtree
+         n_estimators: 3000
+early_stopping_rounds: 100
+            objective: reg:squarederror
+            max_depth: 4
+        learning_rate: 0.01
+   enable_categorical: True
+                feval: 'rmsle' (função definida manualmente)
+               device: gpu
+  validade_parameters: True
+
+=======================================================================
+
+
+###### MODELO 20240611-1435 ######
+
+Registro gerado em 11-06-2024 às 14:59.
+Modelo utilizado salvo como 'modelo20240611-1435.json'
+Scores obtidos no controle: [0.5674057446686132, 0.3008434559797823, 0.06984052708659205, 0.6920664379584722, 0.09849567092212014]
+Média dos scores obtidos no controle:[0.34573]
+Mediana dos scores obtidos no controle:[0.300843]
+Melhor score obtido no controle:[0.069841]
+
+Features utilizadas no modelo e seus respectivos impactos:
+     variável  importância
+   sales_lag5     0.416885
+  sales_lag15     0.329514
+       diff15     0.075718
+        diff5     0.054356
+  sales_lag10     0.030016
+       diff10     0.023971
+      f_local     0.012071
+    store_nbr     0.008282
+   store_type     0.007447
+      feriado     0.004742
+dia_da_semana     0.004520
+         pgto     0.004399
+       family     0.004391
+   mes_do_ano     0.004109
+    mmovel360     0.003356
+     mmovel45     0.002896
+      cluster     0.002843
+  onpromotion     0.002483
+   f_nacional     0.002056
+     gasolina     0.002009
+   f_regional     0.001556
+    mmovel180     0.001340
+     mmovel30     0.001041
+    trimestre     0.000000
+
+Features sem importância: ['trimestre']
+
+Parâmetros do modelo:
+           base_score: 0.5
+              booster: gbtree
+         n_estimators: 4000
+early_stopping_rounds: 200
+            objective: reg:squarederror
+            max_depth: 5
+        learning_rate: 0.1
+   enable_categorical: True
+                feval: 'rmsle' (função definida manualmente)
+               device: gpu
+  validade_parameters: True
+
+=======================================================================
+
+
+################ INÍCIO DE REGISTRO - MODELO 20240611-1803 ################
+
+Registro gerado em 11-06-2024 às 18:22.
+Modelo utilizado salvo como 'modelo20240611-1803.json'
+
+Scores obtidos no controle: [0.8188903622195322, 0.5702227605739276, 0.7185917533022229, 0.6118272162337505, 0.6858889281360789, 0.5343872057972671, 0.5899453550996646, 0.4283444209375909, 0.5590315232261269, 0.6120221554820612, 0.5392110561011264, 0.6260092019110907]
+Média dos scores obtidos no controle:[0.607864]
+Mediana dos scores obtidos no controle:[0.600886]
+Melhor score obtido no controle:[0.428344]
+
+Features utilizadas no modelo e seus respectivos impactos:
+     variável  importância
+   sales_lag5     0.721043
+        diff5     0.087319
+       diff15     0.046084
+       diff10     0.043283
+  sales_lag15     0.031834
+       family     0.022243
+  sales_lag10     0.014843
+         pgto     0.013990
+  onpromotion     0.010100
+      feriado     0.004287
+   mes_do_ano     0.004019
+    store_nbr     0.000489
+   f_nacional     0.000466
+dia_da_semana     0.000000
+      f_local     0.000000
+   f_regional     0.000000
+     gasolina     0.000000
+     mmovel45     0.000000
+     mmovel30     0.000000
+    mmovel180     0.000000
+    mmovel360     0.000000
+
+Features sem importância: ['gasolina' 'f_regional' 'f_local' 'dia_da_semana' 'mmovel45' 'mmovel30'
+ 'mmovel180' 'mmovel360']
+
+Dataset timeseries split em 12 subconjuntos.
+Tamanho de teste para cada split: 30 observações (dias?)
+
+Parâmetros do modelo:
+           base_score: 0.5
+              booster: gbtree
+         n_estimators: 1000
+early_stopping_rounds: 100
+            objective: reg:squaredlogerror
+            max_depth: 4
+        learning_rate: 0.01
+   enable_categorical: True
+               device: gpu
+  validade_parameters: True
+
+ ---===+++ ANÁLISE DAS PREVISÕES REALIZADAS PELO MODELO +++===---
+
+Valor mínimo das vendas previstas:[-0.804346]
+Valor da mediana das vendas previstas:[0.677859]
+Valor máximo das vendas previstas:[772.3854]
+
+Relação das frequências dos valores previstos:
+     -=+ valores mais frequentes +=-
+0         
+0.012008      5810
+0.130130      2807
+0.677859      1887
+0.315011      1504
+8.862510      1453
+15.890040     1407
+0.862739      1031
+0.196888       523
+772.385376     481
+4.282337       412
+     -=+ valores com menor frequência +=-
+0       
+5.754471    1
+5.749260    1
+5.746733    1
+1.088473    1
+5.739417    1
+5.734969    1
+5.730976    1
+5.721581    1
+5.716971    1
+4.906710    1
+
+################ FINAL DE REGISTRO - MODELO 20240611-1803 ################
+
+
+################ INÍCIO DE REGISTRO - MODELO 20240611-1935 ################
+
+Registro gerado em 11-06-2024 às 19:59.
+Modelo utilizado salvo como 'modelo20240611-1935.json'
+
+Scores obtidos no controle: [0.6936362210327781, 0.4085027102814572, 0.5485267906517626, 0.49239318660056874, 0.6055798552449395, 0.4927211477421217, 0.44081439239863374, 0.3086921615758489, 0.4779035008632029, 0.5274744995751949, 0.5044892236535464, 0.4553848905334216]
+Média dos scores obtidos no controle:[0.496343]
+Mediana dos scores obtidos no controle:[0.492557]
+Melhor score obtido no controle:[0.308692]
+
+Features utilizadas no modelo e seus respectivos impactos:
+    variável  importância
+  sales_lag1     0.629986
+       diff1     0.064041
+      diff60     0.032873
+      family     0.028092
+ sales_lag20     0.022770
+       diff4     0.020797
+      diff15     0.019558
+      diff30     0.014880
+       diff5     0.014342
+      diff90     0.012796
+      diff10     0.012030
+  sales_lag2     0.010943
+ sales_lag15     0.010617
+ sales_lag10     0.010185
+  sales_lag5     0.010071
+  sales_lag4     0.009872
+  sales_lag3     0.009696
+ sales_lag30     0.009048
+       diff2     0.008976
+       diff3     0.008734
+ sales_lag60     0.008707
+ sales_lag90     0.008594
+  mes_do_ano     0.007422
+sales_lag360     0.007364
+ onpromotion     0.005336
+sales_lag180     0.002269
+   store_nbr     0.000000
+  f_nacional     0.000000
+        pgto     0.000000
+     feriado     0.000000
+
+Features sem importância: ['store_nbr' 'pgto' 'f_nacional' 'feriado']
+
+Dataset timeseries split em 12 subconjuntos.
+Tamanho de teste para cada split: 30 observações (dias?)
+
+Parâmetros do modelo:
+           base_score: 0.5
+              booster: gbtree
+         n_estimators: 1500
+early_stopping_rounds: 200
+            objective: reg:squaredlogerror
+            max_depth: 3
+        learning_rate: 0.01
+   enable_categorical: True
+               device: gpu
+  validade_parameters: True
+
+ ---===+++ ANÁLISE DAS PREVISÕES REALIZADAS PELO MODELO +++===---
+
+Valor mínimo das vendas previstas:[0.002415]
+Valor da mediana das vendas previstas:[0.260908]
+Valor máximo das vendas previstas:[906.28595]
+
+Relação das frequências dos valores previstos:
+     -=+ valores mais frequentes +=-
+0        
+0.002415     9846
+0.015510     2991
+0.260908     2199
+0.274002     1282
+50.738968     799
+51.643627     792
+25.034477     211
+24.772440     194
+0.144622      165
+45.246567     154
+     -=+ valores com menor frequência +=-
+0         
+7.859592      1
+7.728557      1
+7.738081      1
+7.779166      1
+7.802295      1
+7.809876      1
+7.814394      1
+7.821821      1
+7.826638      1
+906.285950    1
+
+################ FINAL DE REGISTRO - MODELO 20240611-1935 ################
+
+
+################ INÍCIO DE REGISTRO - MODELO 20240620-0730 ################
+
+Registro gerado em 20-06-2024 às 07:46.
+Modelo utilizado salvo como 'modelo20240620-0730.json
+Dados com normalização por **Z-SCORE**
+Período de análise entre 17-02-2016 e 15-08-2017. 
+
+Scores obtidos no controle: ['negativo', 'negativo', 'negativo', 'negativo', 'negativo', 'negativo', 'negativo', 'negativo', 'negativo', 'negativo', 'negativo', 'negativo']
+Controle possui score(s) negativo(s), sem média.
+Controle possui score(s) negativo(s), sem mediana.
+Controle possui score(s) negativo(s), sem registro de melhor score.
+
+Features utilizadas no modelo e seus respectivos impactos:
+     variável  importância
+       family     0.808413
+    store_nbr     0.113002
+  onpromotion     0.057582
+dia_da_semana     0.010103
+      cluster     0.002996
+   mes_do_ano     0.002420
+   store_type     0.001905
+         pgto     0.001426
+   f_nacional     0.001223
+     gasolina     0.000930
+   f_regional     0.000000
+      f_local     0.000000
+
+Features sem importância: ['f_regional' 'f_local']
+
+Dataset timeseries split em 12 subconjuntos.
+Tamanho de teste para cada split: 15 observações (dias?)
+
+Parâmetros do modelo:
+           base_score: 0.3
+              booster: gbtree
+         n_estimators: 1000
+early_stopping_rounds: 100
+            objective: reg:squaredlogerror
+            max_depth: 3
+        learning_rate: 0.01
+   enable_categorical: True
+               device: gpu
+  validade_parameters: True
+
+ ---===+++ ANÁLISE DAS PREVISÕES REALIZADAS PELO MODELO +++===---
+
+Valor mínimo das vendas previstas:[-29.034878]
+Valor da mediana das vendas previstas:[50.069429]
+Valor máximo das vendas previstas:[10883.22838]
+
+Relação das frequências dos valores previstos:
+     -=+ valores mais frequentes +=-
+0         
+-4.947989     10
+ 10.007593    10
+-17.822329     8
+ 8.771013      8
+ 12.661603     8
+-0.341522      8
+-6.012615      8
+-8.976392      8
+-5.082596      8
+ 24.497283     8
+     -=+ valores com menor frequência +=-
+0           
+79.647934       1
+79.668668       1
+79.681161       1
+79.682011       1
+79.692542       1
+79.703857       1
+79.704838       1
+79.707585       1
+79.727796       1
+10883.228380    1
+
+################ FINAL DE REGISTRO - MODELO 20240620-0730 ################
+
+
+################ INÍCIO DE REGISTRO - MODELO 20240620-0755 ################
+
+Registro gerado em 20-06-2024 às 08:02.
+Modelo utilizado salvo como 'modelo20240620-0755.json
+Dados **sem normalização** - revisar presença de outliers
+Período de análise entre 01-01-2013 e 15-08-2017. 
+
+Scores obtidos no controle: [1.3726430435490895, 0.8897117542214797, 0.8722299369564573, 0.7084818687004888, 1.1979832194783437, 1.189136522313563, 1.2675623036821566, 1.3660027233873842, 1.2221326657937779, 1.2680840094431778, 1.1970054641800723, 1.1662482919578914]
+Média dos scores obtidos no controle:[1.143102]
+Mediana dos scores obtidos no controle:[1.197494]
+Melhor score obtido no controle:[0.708482]
+
+Features utilizadas no modelo e seus respectivos impactos:
+     variável  importância
+    store_nbr     0.265124
+      cluster     0.255919
+  onpromotion     0.210192
+       family     0.204001
+     gasolina     0.037277
+   mes_do_ano     0.012198
+   store_type     0.008134
+dia_da_semana     0.007154
+         pgto     0.000000
+   f_nacional     0.000000
+   f_regional     0.000000
+      f_local     0.000000
+
+Features sem importância: ['pgto' 'f_nacional' 'f_regional' 'f_local']
+
+Dataset timeseries split em 12 subconjuntos.
+Tamanho de teste para cada split: 15 observações (dias?)
+
+Parâmetros do modelo:
+           base_score: 0.3
+              booster: gbtree
+         n_estimators: 1000
+early_stopping_rounds: 100
+            objective: reg:squaredlogerror
+            max_depth: 3
+        learning_rate: 0.01
+   enable_categorical: True
+               device: gpu
+  validade_parameters: True
+
+ ---===+++ ANÁLISE DAS PREVISÕES REALIZADAS PELO MODELO +++===---
+
+Valor mínimo das vendas previstas:[-0.16961]
+Valor da mediana das vendas previstas:[17.36103]
+Valor máximo das vendas previstas:[586.63354]
+
+Relação das frequências dos valores previstos:
+     -=+ valores mais frequentes +=-
+0         
+581.531006    216
+581.797485    209
+581.583557    132
+547.989746    132
+581.576355    120
+582.020264    115
+548.145264     76
+581.628906     74
+581.850037     70
+59.716263      56
+     -=+ valores com menor frequência +=-
+0        
+57.805977    1
+57.983261    1
+57.996307    1
+58.008335    1
+58.057446    1
+58.139915    1
+58.151943    1
+58.217407    1
+58.229435    1
+25.222845    1
+
+################ FINAL DE REGISTRO - MODELO 20240620-0755 ################
+
+
+################ INÍCIO DE REGISTRO - MODELO 20240620-1103 ################
+
+Registro gerado em 20-06-2024 às 11:21.
+Modelo utilizado salvo como 'modelo20240620-1103.json
+Dados ***sem normalização***
+Período de análise entre 01-01-2013 e 15-08-2017. 
+Análise realizada sem presença de outliers nas variáveis.
+
+Scores obtidos no controle: [0.5487907838722036, 0.8040533087120213, 0.7504211564704522, 0.5924078864697137, 0.8137818233858588, 0.4845797760069817]
+Média dos scores obtidos no controle:[0.665672]
+Mediana dos scores obtidos no controle:[0.671415]
+Melhor score obtido no controle:[0.48458]
+
+Features utilizadas no modelo e seus respectivos impactos:
+      variável  importância
+    sales_lag1     0.576232
+        diff60     0.072491
+         diff5     0.064574
+        diff15     0.058771
+         diff1     0.052070
+        family     0.045353
+    sales_lag7     0.044834
+        diff90     0.028112
+         diff7     0.016595
+        diff30     0.014345
+   sales_lag15     0.009839
+    sales_lag5     0.008811
+   sales_lag30     0.007653
+      gasolina     0.000321
+vespf_regional     0.000000
+   vespf_local     0.000000
+     store_nbr     0.000000
+    mes_do_ano     0.000000
+ dia_da_semana     0.000000
+       f_local     0.000000
+    f_regional     0.000000
+    f_nacional     0.000000
+          pgto     0.000000
+       cluster     0.000000
+    store_type     0.000000
+   onpromotion     0.000000
+vespf_nacional     0.000000
+
+Features sem importância: ['store_nbr' 'onpromotion' 'store_type' 'cluster' 'pgto' 'f_nacional'
+ 'f_regional' 'f_local' 'dia_da_semana' 'mes_do_ano' 'vespf_local'
+ 'vespf_regional' 'vespf_nacional']
+
+Dataset timeseries split em 6 subconjuntos.
+Tamanho de teste para cada split: 15 observações (dias?)
+
+Parâmetros do modelo:
+           base_score: 0.3
+              booster: gbtree
+         n_estimators: 1000
+early_stopping_rounds: 100
+            objective: reg:squaredlogerror
+            max_depth: 3
+        learning_rate: 0.01
+   enable_categorical: True
+               device: gpu
+  validade_parameters: True
+
+ ---===+++ ANÁLISE DAS PREVISÕES REALIZADAS PELO MODELO +++===---
+
+Valor mínimo das vendas previstas:[0.]
+Valor da mediana das vendas previstas:[0.030026]
+Valor máximo das vendas previstas:[755.4821]
+
+Relação das frequências dos valores previstos:
+     -=+ valores mais frequentes +=-
+0       
+0.030026    18884
+1.264011     4032
+1.148860      499
+0.080297      419
+0.728030      354
+0.035017      237
+0.926756      200
+0.447123      196
+0.197920      175
+0.211506      166
+     -=+ valores com menor frequência +=-
+0        
+10.120698    1
+10.045353    1
+9.950447     1
+9.825694     1
+9.681259     1
+9.671827     1
+9.596383     1
+9.548573     1
+9.356399     1
+8.793699     1
+
+################ FINAL DE REGISTRO - MODELO 20240620-1103 ################
+
+
+################ INÍCIO DE REGISTRO - MODELO 20240620-1126 ################
+
+Registro gerado em 20-06-2024 às 11:40.
+Modelo utilizado salvo como 'modelo20240620-1126.json
+Dados ***sem normalização***
+Período de análise entre 17-02-2016 e 15-08-2017. 
+Análise realizada sem presença de outliers nas variáveis.
+
+Scores obtidos no controle: [0.3423125433036634, 0.7203751327381183, 0.3836349862090994, 0.44578194177013775, 0.5647422034314792, 0.5949141100215024, 0.49471420414707795, 0.7097807509329352, 0.5749167664534148, 0.5012513009589139, 0.7907193998686042, 0.4392034039915361]
+Média dos scores obtidos no controle:[0.546862]
+Mediana dos scores obtidos no controle:[0.532997]
+Melhor score obtido no controle:[0.342313]
+
+Features utilizadas no modelo e seus respectivos impactos:
+      variável  importância
+    sales_lag1     0.688909
+    sales_lag7     0.054673
+         diff1     0.050432
+        diff15     0.031854
+        diff30     0.030305
+        diff60     0.024827
+        diff90     0.023766
+    sales_lag5     0.023507
+         diff7     0.020299
+         diff5     0.016546
+   sales_lag30     0.013480
+   sales_lag15     0.007748
+ dia_da_semana     0.007573
+   onpromotion     0.006082
+vespf_regional     0.000000
+   vespf_local     0.000000
+     store_nbr     0.000000
+        family     0.000000
+    mes_do_ano     0.000000
+       f_local     0.000000
+    f_regional     0.000000
+    f_nacional     0.000000
+          pgto     0.000000
+      gasolina     0.000000
+       cluster     0.000000
+    store_type     0.000000
+vespf_nacional     0.000000
+
+Features sem importância: ['store_nbr' 'family' 'store_type' 'cluster' 'gasolina' 'pgto'
+ 'f_nacional' 'f_regional' 'f_local' 'mes_do_ano' 'vespf_local'
+ 'vespf_regional' 'vespf_nacional']
+
+Dataset timeseries split em 12 subconjuntos.
+Tamanho de teste para cada split: 15 observações (dias?)
+
+Parâmetros do modelo:
+           base_score: 0.3
+              booster: gbtree
+         n_estimators: 1000
+early_stopping_rounds: 100
+            objective: reg:squaredlogerror
+            max_depth: 3
+        learning_rate: 0.01
+   enable_categorical: True
+               device: gpu
+  validade_parameters: True
+
+ ---===+++ ANÁLISE DAS PREVISÕES REALIZADAS PELO MODELO +++===---
+
+Valor mínimo das vendas previstas:[0.060722]
+Valor da mediana das vendas previstas:[0.076379]
+Valor máximo das vendas previstas:[716.51025]
+
+Relação das frequências dos valores previstos:
+     -=+ valores mais frequentes +=-
+0         
+0.076379      10678
+0.060722       8005
+2.214445       1530
+34.784847       929
+2.004812        760
+2.477996        553
+20.143036       508
+2.268363        277
+716.510254      190
+2.366268        185
+     -=+ valores com menor frequência +=-
+0       
+3.869592    1
+3.888768    1
+3.921097    1
+3.922060    1
+3.925848    1
+3.954005    1
+4.016044    1
+4.033893    1
+4.054987    1
+4.346714    1
+
+################ FINAL DE REGISTRO - MODELO 20240620-1126 ################
+
+
+################ INÍCIO DE REGISTRO - MODELO 20240620-1259 ################
+
+Registro gerado em 20-06-2024 às 13:04.
+Modelo utilizado salvo como 'modelo20240620-1259.json
+Dados ***sem normalização***
+Período de análise entre 17-02-2016 e 15-08-2017. 
+Análise realizada sem presença de outliers nas variáveis.
+
+Scores obtidos no controle: [0.23482000555933255, 0.6371681242073389, 0.09859301995000469, 0.40028550430505194, 0.45030991537442855, 0.5767135325105724, 0.40714686277590273, 0.7464468293479227, 0.5122561508959909, 0.48851478848502494, 0.689114936704933, 0.3290997696693102]
+Média dos scores obtidos no controle:[0.464206]
+Mediana dos scores obtidos no controle:[0.469412]
+Melhor score obtido no controle:[0.098593]
+
+Features utilizadas no modelo e seus respectivos impactos:
+     variável  importância
+  onpromotion     0.285703
+   sales_lag1     0.272761
+   sales_lag7     0.108814
+       diff60     0.068298
+   mes_do_ano     0.057605
+       diff15     0.043155
+        diff5     0.034858
+   sales_lag5     0.028766
+        diff1     0.021845
+     gasolina     0.017822
+        diff7     0.015188
+       diff90     0.012835
+    store_nbr     0.006087
+  sales_lag15     0.006075
+         pgto     0.005631
+       diff30     0.005513
+dia_da_semana     0.002546
+  sales_lag30     0.002513
+      cluster     0.002233
+       family     0.001751
+
+Não foram identificadas features sem importância. 
+
+Dataset timeseries split em 12 subconjuntos.
+Tamanho de teste para cada split: 15 observações (dias?)
+
+Parâmetros do modelo:
+           base_score: 0.3
+              booster: gbtree
+         n_estimators: 1200
+early_stopping_rounds: 100
+            objective: reg:squaredlogerror
+            max_depth: 5
+        learning_rate: 0.01
+   enable_categorical: True
+               device: gpu
+  validade_parameters: True
+
+ ---===+++ ANÁLISE DAS PREVISÕES REALIZADAS PELO MODELO +++===---
+
+Valor mínimo das vendas previstas:[0.]
+Valor da mediana das vendas previstas:[0.223721]
+Valor máximo das vendas previstas:[832.4674]
+
+Relação das frequências dos valores previstos:
+     -=+ valores mais frequentes +=-
+0        
+0.001903     3877
+0.122962     3403
+0.223721     1989
+72.688774     858
+0.071576      668
+0.000000      580
+74.505173     364
+0.172336      348
+0.006216      270
+18.891676     225
+     -=+ valores com menor frequência +=-
+0         
+0.809295      1
+0.809060      1
+0.805509      1
+0.803106      1
+0.801345      1
+0.800972      1
+0.798679      1
+0.796918      1
+0.796704      1
+832.467407    1
+
+################ FINAL DE REGISTRO - MODELO 20240620-1259 ################
+
+
+################ INÍCIO DE REGISTRO - MODELO 20240620-1316 ################
+
+Registro gerado em 20-06-2024 às 13:27.
+Modelo utilizado salvo como 'modelo20240620-1316.json
+Dados ***sem normalização***
+Período de análise entre 16-08-2016 e 15-08-2017. 
+Análise realizada sem presença de outliers nas variáveis.
+
+Scores obtidos no controle: [0.38370945566569997, 0.7465255896352314, 0.12100854012600862, 0.4864826144724073, 0.5056604136867947, 0.7118784231007464, 0.5027788368284799, 0.844538295423334, 0.5710627311956442, 0.590418407210325, 0.7751491723976762, 0.411019927913877]
+Média dos scores obtidos no controle:[0.554186]
+Mediana dos scores obtidos no controle:[0.538362]
+Melhor score obtido no controle:[0.121009]
+
+Features utilizadas no modelo e seus respectivos impactos:
+     variável  importância
+  onpromotion     0.371418
+   sales_lag1     0.248060
+       diff60     0.069168
+   mes_do_ano     0.062608
+        diff5     0.040572
+dia_da_semana     0.039428
+   sales_lag7     0.033931
+      cluster     0.022595
+       diff15     0.020318
+        diff7     0.019258
+        diff1     0.017277
+       diff90     0.012220
+   sales_lag5     0.011888
+         pgto     0.011514
+  sales_lag15     0.007078
+  sales_lag30     0.006256
+       diff30     0.005523
+       family     0.000371
+     gasolina     0.000330
+    store_nbr     0.000187
+
+Não foram identificadas features sem importância. 
+
+Dataset timeseries split em 12 subconjuntos.
+Tamanho de teste para cada split: 15 observações (dias?)
+
+Parâmetros do modelo:
+           base_score: 0.3
+              booster: gbtree
+         n_estimators: 1200
+early_stopping_rounds: 100
+            objective: reg:squaredlogerror
+            max_depth: 5
+        learning_rate: 0.01
+   enable_categorical: True
+               device: gpu
+  validade_parameters: True
+
+ ---===+++ ANÁLISE DAS PREVISÕES REALIZADAS PELO MODELO +++===---
+
+Valor mínimo das vendas previstas:[0.004451]
+Valor da mediana das vendas previstas:[0.369225]
+Valor máximo das vendas previstas:[580.72235]
+Sem registro de previsões negativas através deste modelo.
+
+Relação das frequências dos valores previstos:
+     -=+ valores mais frequentes +=-
+0        
+0.004451     4021
+0.207125     3555
+0.369225     1828
+84.323036     839
+0.073281      678
+0.326921      557
+0.545464      537
+33.606232     398
+0.018614      338
+0.235382      330
+     -=+ valores com menor frequência +=-
+0       
+0.879447    1
+0.879892    1
+0.881617    1
+0.883099    1
+0.883155    1
+0.884878    1
+0.886389    1
+0.886673    1
+0.890997    1
+3.678930    1
+
+################ FINAL DE REGISTRO - MODELO 20240620-1316 ################
+
+
+################ INÍCIO DE REGISTRO - MODELO 20240620-1331 ################
+
+Registro gerado em 20-06-2024 às 13:35.
+Modelo utilizado salvo como 'modelo20240620-1331.json
+Dados ***sem normalização***
+Período de análise entre 17-02-2017 e 15-08-2017. 
+Análise realizada sem presença de outliers nas variáveis.
+
+Scores obtidos no controle: [0.2594317790168024, 0.7597965539010535, 0.23449439808873074, 0.4631872077962148, 'negativo', 0.6475624642392143, 0.5048381092140884, 0.7378368732247563, 0.5837843223061792, 0.5048323940200239, 0.8174486940607656, 0.388012581741233]
+Controle possui score(s) negativo(s), sem média.
+Controle possui score(s) negativo(s), sem mediana.
+Controle possui score(s) negativo(s), sem registro de melhor score.
+
+Features utilizadas no modelo e seus respectivos impactos:
+      variável  importância
+    sales_lag1     0.735698
+    sales_lag7     0.091302
+    sales_lag5     0.035060
+         diff1     0.031840
+ dia_da_semana     0.014936
+   sales_lag30     0.012205
+        diff60     0.011503
+        diff30     0.010802
+        diff90     0.010468
+        diff15     0.009524
+         diff5     0.006542
+        family     0.006514
+      gasolina     0.006033
+   sales_lag15     0.005968
+         diff7     0.005751
+   onpromotion     0.003006
+     store_nbr     0.001566
+    f_regional     0.000777
+          pgto     0.000313
+       cluster     0.000190
+    mes_do_ano     0.000000
+       f_local     0.000000
+    f_nacional     0.000000
+    store_type     0.000000
+   vespf_local     0.000000
+vespf_regional     0.000000
+vespf_nacional     0.000000
+
+Features sem importância: ['store_type' 'f_nacional' 'f_local' 'mes_do_ano' 'vespf_local'
+ 'vespf_regional' 'vespf_nacional']
+
+Dataset timeseries split em 12 subconjuntos.
+Tamanho de teste para cada split: 15 observações (dias?)
+
+Parâmetros do modelo:
+           base_score: 0.3
+              booster: gbtree
+         n_estimators: 1200
+early_stopping_rounds: 100
+            objective: reg:squaredlogerror
+            max_depth: 5
+        learning_rate: 0.01
+   enable_categorical: True
+               device: gpu
+  validade_parameters: True
+
+ ---===+++ ANÁLISE DAS PREVISÕES REALIZADAS PELO MODELO +++===---
+
+Valor mínimo das vendas previstas:[0.]
+Valor da mediana das vendas previstas:[0.276873]
+Valor máximo das vendas previstas:[591.66315]
+Quantidade de previsões negativas (tranformadas para zero): 315 (1.1% do total).
+
+Relação das frequências dos valores previstos:
+     -=+ valores mais frequentes +=-
+0        
+0.000654     3917
+4.704628     1561
+4.055943      875
+0.122505      638
+4.066411      434
+0.242974      415
+0.000000      315
+64.432098     294
+64.414764     282
+0.261313      268
+     -=+ valores com menor frequência +=-
+0       
+0.287285    1
+0.285863    1
+0.287174    1
+0.287114    1
+0.287033    1
+0.286590    1
+0.286531    1
+0.286135    1
+0.285945    1
+0.358484    1
+
+################ FINAL DE REGISTRO - MODELO 20240620-1331 ################
+
+
+################ INÍCIO DE REGISTRO - MODELO 20240620-1337 ################
+
+Registro gerado em 20-06-2024 às 13:44.
+Modelo utilizado salvo como 'modelo20240620-1337.json
+Dados ***sem normalização***
+Período de análise entre 17-02-2016 e 15-08-2017. 
+Atenção: análise realizada com outliers presentes nas variáveis!
+
+Scores obtidos no controle: [0.26041037296516373, 0.6270638047254068, 0.08038901417115288, 0.4333449785691584, 0.49627658962960686, 0.5751607962652955, 0.4030301017596922, 0.6848545277237411, 0.4798160197875892, 0.47673356581260884, 0.6838073878069433, 0.3398895823912122]
+Média dos scores obtidos no controle:[0.461731]
+Mediana dos scores obtidos no controle:[0.478275]
+Melhor score obtido no controle:[0.080389]
+
+Features utilizadas no modelo e seus respectivos impactos:
+      variável  importância
+    sales_lag1     0.331427
+    sales_lag7     0.158153
+        family     0.139184
+   onpromotion     0.076150
+        diff60     0.061837
+        diff15     0.036515
+         diff1     0.035986
+    sales_lag5     0.035863
+ dia_da_semana     0.027146
+         diff5     0.024447
+     store_nbr     0.020262
+         diff7     0.019451
+        diff90     0.009121
+        diff30     0.006305
+   sales_lag15     0.004806
+       cluster     0.004030
+   sales_lag30     0.002705
+    mes_do_ano     0.002370
+       f_local     0.001791
+          pgto     0.001253
+      gasolina     0.001158
+    store_type     0.000038
+    f_nacional     0.000002
+    f_regional     0.000000
+   vespf_local     0.000000
+vespf_regional     0.000000
+vespf_nacional     0.000000
+
+Features sem importância: ['f_regional' 'vespf_local' 'vespf_regional' 'vespf_nacional']
+
+Dataset timeseries split em 12 subconjuntos.
+Tamanho de teste para cada split: 15 observações (dias?)
+
+Parâmetros do modelo:
+           base_score: 0.3
+              booster: gbtree
+         n_estimators: 1200
+early_stopping_rounds: 100
+            objective: reg:squaredlogerror
+            max_depth: 5
+        learning_rate: 0.01
+   enable_categorical: True
+               device: gpu
+  validade_parameters: True
+
+ ---===+++ ANÁLISE DAS PREVISÕES REALIZADAS PELO MODELO +++===---
+
+Valor mínimo das vendas previstas:[0.]
+Valor da mediana das vendas previstas:[0.288351]
+Valor máximo das vendas previstas:[826.39777]
+Quantidade de previsões negativas (tranformadas para zero): 496 (1.74% do total).
+
+Relação das frequências dos valores previstos:
+     -=+ valores mais frequentes +=-
+0        
+0.000348     4021
+0.161004     3340
+0.304752     2141
+75.512695     857
+0.075771      600
+0.000000      496
+77.392540     369
+0.219518      341
+0.004662      286
+76.464188     234
+     -=+ valores com menor frequência +=-
+0         
+0.719647      1
+0.719031      1
+0.717849      1
+0.717276      1
+0.716759      1
+0.716476      1
+0.716322      1
+0.715933      1
+0.714707      1
+826.397766    1
+
+################ FINAL DE REGISTRO - MODELO 20240620-1337 ################
+
+
+################ INÍCIO DE REGISTRO - MODELO 20240620-1447 ################
+
+Registro gerado em 20-06-2024 às 15:55.
+Modelo utilizado salvo como 'modelo20240620-1447.json
+Dados ***sem normalização***
+Período de análise entre 17-02-2016 e 15-08-2017. 
+Atenção: análise realizada com outliers presentes nas variáveis!
+
+Scores obtidos no controle: [2.45874666512301, 3.0307807870238235, 2.9493967536928944, 2.506314148639373, 3.371099144819432, 2.5907397936556698]
+Média dos scores obtidos no controle:[2.817846]
+Mediana dos scores obtidos no controle:[2.770068]
+Melhor score obtido no controle:[2.458747]
+
+Features utilizadas no modelo e seus respectivos impactos:
+      variável  importância
+    sales_lag1     0.805460
+         diff1     0.078490
+    sales_lag7     0.043404
+        diff15     0.037114
+         diff7     0.035532
+     store_nbr     0.000000
+   sales_lag15     0.000000
+vespf_regional     0.000000
+   vespf_local     0.000000
+         diff5     0.000000
+    sales_lag5     0.000000
+    mes_do_ano     0.000000
+        family     0.000000
+ dia_da_semana     0.000000
+       f_local     0.000000
+    f_regional     0.000000
+    f_nacional     0.000000
+          pgto     0.000000
+      gasolina     0.000000
+       cluster     0.000000
+    store_type     0.000000
+   onpromotion     0.000000
+vespf_nacional     0.000000
+
+Features sem importância: ['store_nbr' 'family' 'onpromotion' 'store_type' 'cluster' 'gasolina'
+ 'pgto' 'f_nacional' 'f_regional' 'f_local' 'dia_da_semana' 'mes_do_ano'
+ 'sales_lag15' 'sales_lag5' 'diff5' 'vespf_local' 'vespf_regional'
+ 'vespf_nacional']
+
+Dataset timeseries split em 6 subconjuntos.
+Tamanho de teste para cada split: 15 observações (dias?)
+
+Parâmetros do modelo:
+           base_score: 0.3
+              booster: dart
+         n_estimators: 500
+early_stopping_rounds: 100
+            objective: reg:squaredlogerror
+            max_depth: 3
+        learning_rate: 0.01
+   enable_categorical: True
+               device: gpu
+  validade_parameters: True
+
+ ---===+++ ANÁLISE DAS PREVISÕES REALIZADAS PELO MODELO +++===---
+
+Valor mínimo das vendas previstas:[0.096808]
+Valor da mediana das vendas previstas:[0.096808]
+Valor máximo das vendas previstas:[11.126767]
+Sem registro de previsões negativas através deste modelo.
+
+Relação das frequências dos valores previstos:
+     -=+ valores mais frequentes +=-
+0        
+0.096808     26991
+8.687909       298
+10.581155      253
+11.126767      196
+0.225549        63
+0.537833        55
+1.241447        46
+0.948128        37
+1.701230        36
+2.140366        21
+     -=+ valores com menor frequência +=-
+0       
+5.258696    1
+5.271034    1
+5.273974    1
+5.309832    1
+5.344097    1
+5.413399    1
+5.486462    1
+5.567436    1
+5.613326    1
+4.828943    1
+
+################ FINAL DE REGISTRO - MODELO 20240620-1447 ################
+
+
+################ INÍCIO DE REGISTRO - MODELO 20240624-0930 ################
+
+Registro gerado em 24-06-2024 às 09:56.
+O modelo utilizado não foi salvo!
+Dados ***sem normalização***
+Período de análise entre 17-02-2016 e 15-08-2017. 
+Atenção: análise realizada com outliers presentes nas variáveis!
+
+Scores obtidos no controle: [3.3513813296202364, 3.2458351740918245, 3.2196347621416113, 3.250852017032738, 3.3442124480355253, 3.3125995819716563]
+Média dos scores obtidos no controle:[3.287419]
+Mediana dos scores obtidos no controle:[3.281726]
+Melhor score obtido no controle:[3.219635]
+Quantidade total de variáveis utilizadas na modelagem: 23Variáveis utilizadas na modelagem: ['store_nbr' 'family' 'onpromotion' 'store_type' 'cluster' 'gasolina'
+ 'pgto' 'f_nacional' 'f_regional' 'f_local' 'dia_da_semana' 'mes_do_ano'
+ 'sales_lag15' 'sales_lag7' 'sales_lag5' 'sales_lag1' 'diff15' 'diff7'
+ 'diff5' 'diff1' 'vespf_local' 'vespf_regional' 'vespf_nacional']
+
+Dataset timeseries split em 6 subconjuntos.
+Tamanho de teste para cada split: 1782 observações
+
+Parâmetros do modelo:
+{'categorical_features': 'from_dtype', 'early_stopping': 'auto', 'interaction_cst': None, 'l2_regularization': 0.0, 'learning_rate': 0.001, 'loss': 'squared_error', 'max_bins': 255, 'max_depth': 5, 'max_features': 0.5, 'max_iter': 300, 'max_leaf_nodes': 31, 'min_samples_leaf': 20, 'monotonic_cst': None, 'n_iter_no_change': 10, 'quantile': None, 'random_state': 1, 'scoring': 'loss', 'tol': 1e-07, 'validation_fraction': 0.1, 'verbose': 0, 'warm_start': False}
+
+---===+++ ANÁLISE DAS PREVISÕES REALIZADAS PELO MODELO +++===---
+
+Valor mínimo das vendas previstas:[344.187883]
+Valor da mediana das vendas previstas:[344.290779]
+Valor máximo das vendas previstas:[2478.367421]
+Sem registro de previsões negativas através deste modelo.
+
+Relação das frequências dos valores previstos:
+     -=+ valores mais frequentes +=-
+0         
+344.187883    13250
+344.230013      660
+344.552230      416
+356.599852      385
+348.454501      384
+347.374616      297
+344.290779      239
+345.764019      209
+344.594360      162
+356.887690      137
+     -=+ valores com menor frequência +=-
+0          
+381.595350     1
+381.626134     1
+381.643982     1
+381.664239     1
+381.699168     1
+381.925161     1
+381.928690     1
+381.934104     1
+381.946496     1
+2478.367421    1
+
+################ FINAL DE REGISTRO - MODELO 20240624-0930 ################
+
+
+################ INÍCIO DE REGISTRO - MODELO 20240624-1228 ################
+
+Registro gerado em 24-06-2024 às 12:31.
+Modelo utilizado salvo como 'modelo20240624-1228.json
+Dados com normalização por ***LOG***
+Período de análise entre 17-02-2016 e 15-08-2017. 
+################ INÍCIO DE REGISTRO - MODELO 20240624-1238 ################
+
+Registro gerado em 24-06-2024 às 12:41.
+O modelo utilizado não foi salvo!
+Dados ***sem normalização***
+Período de análise entre 17-02-2016 e 15-08-2017. 
+Atenção: análise realizada com outliers presentes nas variáveis!
+
+Scores obtidos no controle: [3.353635993081681, 3.2494600613330693, 3.2226808002972573, 3.253754970810865, 3.3469304976162717, 3.3158330595149614]
+Média dos scores obtidos no controle:[3.290383]
+Mediana dos scores obtidos no controle:[3.284794]
+Melhor score obtido no controle:[3.222681]
+Quantidade total de variáveis utilizadas na modelagem: 20Variáveis utilizadas na modelagem: ['0' '1' '2' '3' '4' '5' '6' '7' '8' '9' '10' '11' '12' '13' '14' '15'
+ '16' '17' 'family' 'store_type']
+
+Dataset timeseries split em 6 subconjuntos.
+Tamanho de teste para cada split: 1782 observações
+
+Parâmetros do modelo:
+{'categorical_features': 'from_dtype', 'early_stopping': 'auto', 'interaction_cst': None, 'l2_regularization': 0.0, 'learning_rate': 0.001, 'loss': 'squared_error', 'max_bins': 255, 'max_depth': 5, 'max_features': 0.5, 'max_iter': 300, 'max_leaf_nodes': 31, 'min_samples_leaf': 20, 'monotonic_cst': None, 'n_iter_no_change': 10, 'quantile': None, 'random_state': 1, 'scoring': 'loss', 'tol': 1e-07, 'validation_fraction': 0.1, 'verbose': 0, 'warm_start': False}
+
+---===+++ ANÁLISE DAS PREVISÕES REALIZADAS PELO MODELO +++===---
+
+Valor mínimo das vendas previstas:[345.38246]
+Valor da mediana das vendas previstas:[348.053331]
+Valor máximo das vendas previstas:[2277.035331]
+Sem registro de previsões negativas através deste modelo.
+
+Relação das frequências dos valores previstos:
+     -=+ valores mais frequentes +=-
+0         
+345.382460    10365
+345.422527      945
+354.706434      625
+345.795457      269
+345.835524      198
+345.563692      130
+367.001495      123
+345.966156      114
+349.598594      110
+346.106840      103
+     -=+ valores com menor frequência +=-
+0          
+387.466009     1
+387.457803     1
+387.456038     1
+387.418900     1
+387.404684     1
+387.291607     1
+387.272976     1
+387.247049     1
+387.227161     1
+2277.035331    1
+
+################ FINAL DE REGISTRO - MODELO 20240624-1238 ################
+
+
+################ INÍCIO DE REGISTRO - MODELO 20240624-1434 ################
+
+Registro gerado em 24-06-2024 às 15:18.
+Modelo utilizado salvo como 'modelo20240624-1434.json
+Dados ***sem normalização***
+Período de análise entre 17-02-2016 e 15-08-2017. 
+Atenção: análise realizada com outliers presentes nas variáveis!
+
+Scores obtidos no controle: [0.679161518663514, 0.7305327798037, 0.7041830813105522, 0.7156063360817422, 0.7278993974130888, 0.7120401088409819, 0.6896401457817126, 0.6993406969798863, 0.7097239007225175, 0.7031761046929703]
+Média dos scores obtidos no controle:[0.70713]
+Mediana dos scores obtidos no controle:[0.706953]
+Melhor score obtido no controle:[0.679162]
+
+Features utilizadas no modelo e seus respectivos impactos:
+      variável  importância
+    sales_lag1     0.500172
+    sales_lag5     0.157276
+   sales_lag15     0.108072
+   sales_lag10     0.067721
+         diff1     0.035945
+         diff5     0.034683
+        diff10     0.027971
+        diff15     0.019881
+       f_local     0.015831
+     store_nbr     0.007233
+      gasolina     0.006241
+    mes_do_ano     0.004049
+        family     0.003782
+ dia_da_semana     0.003650
+          pgto     0.002714
+    f_nacional     0.002147
+   onpromotion     0.002109
+    f_regional     0.000523
+       cluster     0.000000
+    store_type     0.000000
+   vespf_local     0.000000
+vespf_regional     0.000000
+vespf_nacional     0.000000
+
+Features sem importância: ['store_type' 'cluster' 'vespf_local' 'vespf_regional' 'vespf_nacional']
+
+Dataset timeseries split em 10 subconjuntos.
+Tamanho de teste para cada split: 1782 observações (dias?)
+
+Parâmetros do modelo:
+           base_score: 0.5
+              booster: gbtree
+         n_estimators: 1000
+early_stopping_rounds: 100
+            objective: reg:squarederror
+            max_depth: 4
+        learning_rate: 0.01
+   enable_categorical: True
+               device: gpu
+  validade_parameters: True
+
+ ---===+++ ANÁLISE DAS PREVISÕES REALIZADAS PELO MODELO +++===---
+
+Valor mínimo das vendas previstas:[0.]
+Valor da mediana das vendas previstas:[6.549887]
+Valor máximo das vendas previstas:[7287.07]
+Quantidade de previsões negativas (tranformadas para zero): 6 (0.02% do total).
+
+Relação das frequências dos valores previstos:
+     -=+ valores mais frequentes +=-
+0        
+4.119299     6124
+4.387374     2113
+5.268579      468
+4.421096      398
+5.536653      275
+4.860509      193
+5.509864      150
+4.622721      146
+5.570374      145
+13.052168     143
+     -=+ valores com menor frequência +=-
+0          
+46.436951      1
+46.665054      1
+46.437939      1
+46.444572      1
+46.465160      1
+46.471359      1
+46.547695      1
+46.561390      1
+46.587875      1
+7287.069824    1
+
+################ FINAL DE REGISTRO - MODELO 20240624-1434 ################
+
+
+################ INÍCIO DE REGISTRO - MODELO 20240624-1525 ################
+
+Registro gerado em 24-06-2024 às 15:29.
+Modelo utilizado salvo como 'modelo20240624-1525.json
+Dados com normalização por ***Z-SCORE***
+Período de análise entre 17-02-2016 e 15-08-2017. 
+Análise realizada sem presença de outliers nas variáveis.
+
+Scores obtidos no controle: ['negativo', 'negativo', 'negativo', 'negativo', 'negativo', 'negativo', 'negativo', 'negativo', 'negativo', 'negativo']
+Controle possui score(s) negativo(s), sem média.
+Controle possui score(s) negativo(s), sem mediana.
+Controle possui score(s) negativo(s), sem registro de melhor score.
+
+Features utilizadas no modelo e seus respectivos impactos:
+      variável  importância
+    sales_lag1     0.502418
+    sales_lag5     0.153936
+   sales_lag15     0.102924
+   sales_lag10     0.068931
+         diff1     0.036005
+         diff5     0.035195
+        diff10     0.028558
+       f_local     0.020640
+        diff15     0.020120
+     store_nbr     0.007406
+      gasolina     0.006262
+ dia_da_semana     0.003777
+    mes_do_ano     0.003651
+        family     0.003644
+          pgto     0.002760
+    f_nacional     0.001751
+   onpromotion     0.001526
+    f_regional     0.000495
+       cluster     0.000000
+    store_type     0.000000
+   vespf_local     0.000000
+vespf_regional     0.000000
+vespf_nacional     0.000000
+
+Features sem importância: ['store_type' 'cluster' 'vespf_local' 'vespf_regional' 'vespf_nacional']
+
+Dataset timeseries split em 10 subconjuntos.
+Tamanho de teste para cada split: 1782 observações (dias?)
+
+Parâmetros do modelo:
+           base_score: 0.5
+              booster: gbtree
+         n_estimators: 1000
+early_stopping_rounds: 100
+            objective: reg:squarederror
+            max_depth: 4
+        learning_rate: 0.01
+   enable_categorical: True
+               device: gpu
+  validade_parameters: True
+
+ ---===+++ ANÁLISE DAS PREVISÕES REALIZADAS PELO MODELO +++===---
+
+Valor mínimo das vendas previstas:[0.   1.38]
+Valor da mediana das vendas previstas:[6.820583 1.38    ]
+Valor máximo das vendas previstas:[7305.126035    1.38    ]
+Quantidade de previsões negativas (tranformadas para zero): 5 (0.02% do total).
+
+Relação das frequências dos valores previstos:
+     -=+ valores mais frequentes +=-
+0         1   
+4.389676  1.38    2971
+4.173441  1.38    2914
+4.513752  1.38    1159
+4.729987  1.38     802
+4.957079  1.38     465
+4.699900  1.38     392
+4.520620  1.38     333
+5.319367  1.38     322
+5.297391  1.38     241
+5.659679  1.38     213
+     -=+ valores com menor frequência +=-
+0            1   
+49.950257    1.38    1
+49.966021    1.38    1
+50.011871    1.38    1
+50.033586    1.38    1
+50.060730    1.38    1
+50.062953    1.38    1
+50.065962    1.38    1
+50.115083    1.38    1
+50.121362    1.38    1
+7305.126035  1.38    1
+
+################ FINAL DE REGISTRO - MODELO 20240624-1525 ################
+
+
+################ INÍCIO DE REGISTRO - MODELO 20240624-1530 ################
+
+Registro gerado em 24-06-2024 às 15:36.
+Modelo utilizado salvo como 'modelo20240624-1530.json
+Dados com normalização por ***Z-SCORE***
+Período de análise entre 17-02-2016 e 15-08-2017. 
+Análise realizada sem presença de outliers nas variáveis.
+
+Scores obtidos no controle: ['negativo', 'negativo', 'negativo', 'negativo', 'negativo', 'negativo', 'negativo', 'negativo', 'negativo', 'negativo']
+Controle possui score(s) negativo(s), sem média.
+Controle possui score(s) negativo(s), sem mediana.
+Controle possui score(s) negativo(s), sem registro de melhor score.
+
+Features utilizadas no modelo e seus respectivos impactos:
+      variável  importância
+    sales_lag1     0.495465
+    sales_lag5     0.160612
+   sales_lag15     0.099289
+   sales_lag10     0.067471
+         diff1     0.044906
+         diff5     0.033626
+        diff10     0.027608
+        diff15     0.021880
+       f_local     0.017386
+     store_nbr     0.006750
+ dia_da_semana     0.005363
+    mes_do_ano     0.005323
+        family     0.003652
+      gasolina     0.003387
+          pgto     0.002598
+    f_nacional     0.001814
+   onpromotion     0.001722
+    f_regional     0.000787
+       cluster     0.000327
+    store_type     0.000034
+   vespf_local     0.000000
+vespf_regional     0.000000
+vespf_nacional     0.000000
+
+Features sem importância: ['vespf_local' 'vespf_regional' 'vespf_nacional']
+
+Dataset timeseries split em 10 subconjuntos.
+Tamanho de teste para cada split: 1782 observações (dias?)
+
+Parâmetros do modelo:
+           base_score: 0.5
+              booster: gbtree
+         n_estimators: 3000
+early_stopping_rounds: 100
+            objective: reg:squarederror
+            max_depth: 4
+        learning_rate: 0.01
+   enable_categorical: True
+               device: gpu
+  validade_parameters: True
+
+ ---===+++ ANÁLISE DAS PREVISÕES REALIZADAS PELO MODELO +++===---
+
+Valor mínimo das vendas previstas:[0.   1.38]
+Valor da mediana das vendas previstas:[5.341279 1.38    ]
+Valor máximo das vendas previstas:[7259.814849    1.38    ]
+Quantidade de previsões negativas (tranformadas para zero): 921 (3.23% do total).
+
+Relação das frequências dos valores previstos:
+     -=+ valores mais frequentes +=-
+0         1   
+0.000000  1.38    921
+2.415896  1.38    364
+1.477309  1.38    198
+1.111097  1.38    185
+0.707733  1.38    176
+0.315554  1.38    171
+0.552457  1.38    112
+0.294101  1.38     97
+1.000101  1.38     82
+2.656200  1.38     68
+     -=+ valores com menor frequência +=-
+0            1   
+8.425142     1.38    1
+8.427170     1.38    1
+8.430178     1.38    1
+8.430832     1.38    1
+8.431748     1.38    1
+8.432860     1.38    1
+8.440251     1.38    1
+8.445549     1.38    1
+8.448885     1.38    1
+7259.814849  1.38    1
+
+################ FINAL DE REGISTRO - MODELO 20240624-1530 ################
+
+
+################ INÍCIO DE REGISTRO - MODELO 20240625-0841 ################
+
+Registro gerado em 25-06-2024 às 08:54.
+Modelo utilizado salvo como 'modelo20240625-0841.json
+Dados com normalização por ***Z-SCORE***
+Período de análise entre 17-02-2016 e 15-08-2017. 
+Análise realizada sem presença de outliers nas variáveis.
+
+Scores obtidos no controle: ['negativo', 'negativo', 'negativo', 'negativo', 'negativo', 'negativo', 'negativo', 'negativo', 'negativo', 'negativo']
+Controle possui score(s) negativo(s), sem média.
+Controle possui score(s) negativo(s), sem mediana.
+Controle possui score(s) negativo(s), sem registro de melhor score.
+
+Features utilizadas no modelo e seus respectivos impactos:
+     variável  importância
+   sales_lag1     0.490639
+   sales_lag5     0.162667
+  sales_lag15     0.105122
+  sales_lag10     0.068088
+        diff1     0.042037
+        diff5     0.033980
+       diff10     0.029137
+       diff15     0.020351
+      f_local     0.015959
+    store_nbr     0.006594
+   mes_do_ano     0.006314
+dia_da_semana     0.005325
+       family     0.003560
+     gasolina     0.003067
+         pgto     0.002839
+   f_nacional     0.001893
+  onpromotion     0.001814
+   f_regional     0.000612
+
+Não foram identificadas features sem importância. 
+
+Dataset timeseries split em 10 subconjuntos.
+Tamanho de teste para cada split: 26730 observações (dias?)
+
+Parâmetros do modelo:
+           base_score: 0.5
+              booster: gbtree
+         n_estimators: 2000
+early_stopping_rounds: 100
+            objective: reg:squarederror
+            max_depth: 4
+        learning_rate: 0.01
+   enable_categorical: True
+               device: gpu
+  validade_parameters: True
+
+ ---===+++ ANÁLISE DAS PREVISÕES REALIZADAS PELO MODELO +++===---
+
+Valor mínimo das vendas previstas:[0.   1.38]
+Valor da mediana das vendas previstas:[5.416823 1.38    ]
+Valor máximo das vendas previstas:[7322.058013    1.38    ]
+Quantidade de previsões negativas (tranformadas para zero): 300 (1.05% do total).
+
+Relação das frequências dos valores previstos:
+     -=+ valores mais frequentes +=-
+0         1   
+0.377102  1.38    332
+0.000000  1.38    300
+2.391565  1.38    283
+0.449442  1.38    144
+1.635070  1.38    122
+0.567109  1.38     97
+0.570641  1.38     96
+0.663191  1.38     96
+1.846007  1.38     96
+1.818013  1.38     96
+     -=+ valores com menor frequência +=-
+0            1   
+8.333965     1.38    1
+8.343056     1.38    1
+8.348616     1.38    1
+8.349663     1.38    1
+8.350317     1.38    1
+8.357184     1.38    1
+8.357904     1.38    1
+8.358100     1.38    1
+8.361828     1.38    1
+7322.058013  1.38    1
+
+################ FINAL DE REGISTRO - MODELO 20240625-0841 ################
+
+
+################ INÍCIO DE REGISTRO - MODELO 20240625-0857 ################
+
+Registro gerado em 25-06-2024 às 08:59.
+O modelo utilizado não foi salvo!
+Dados com normalização por ***Z-SCORE***
+Período de análise entre 17-02-2016 e 15-08-2017. 
+Análise realizada sem presença de outliers nas variáveis.
+
+Scores obtidos no controle: ['negativo', 'negativo', 'negativo', 'negativo', 'negativo', 'negativo', 'negativo', 'negativo', 'negativo', 'negativo']
+Controle possui score(s) negativo(s), sem média.
+Controle possui score(s) negativo(s), sem mediana.
+Controle possui score(s) negativo(s), sem registro de melhor score.
+Quantidade total de variáveis utilizadas na modelagem: 9Variáveis utilizadas na modelagem: ['f_local' 'sales_lag15' 'sales_lag10' 'sales_lag5' 'sales_lag1' 'diff15'
+ 'diff10' 'diff5' 'diff1']
+
+Dataset timeseries split em 10 subconjuntos.
+Tamanho de teste para cada split: 26730 observações
+
+Parâmetros do modelo:
+{'objective': 'reg:squarederror', 'base_score': 0.5, 'booster': 'gbtree', 'callbacks': None, 'colsample_bylevel': None, 'colsample_bynode': None, 'colsample_bytree': None, 'device': 'gpu', 'early_stopping_rounds': 100, 'enable_categorical': True, 'eval_metric': None, 'feature_types': None, 'gamma': None, 'grow_policy': None, 'importance_type': None, 'interaction_constraints': None, 'learning_rate': 0.01, 'max_bin': None, 'max_cat_threshold': None, 'max_cat_to_onehot': None, 'max_delta_step': None, 'max_depth': 4, 'max_leaves': None, 'min_child_weight': None, 'missing': nan, 'monotone_constraints': None, 'multi_strategy': None, 'n_estimators': 1000, 'n_jobs': None, 'num_parallel_tree': None, 'random_state': None, 'reg_alpha': None, 'reg_lambda': None, 'sampling_method': None, 'scale_pos_weight': None, 'subsample': None, 'tree_method': None, 'validate_parameters': True, 'verbosity': None}
+
+---===+++ ANÁLISE DAS PREVISÕES REALIZADAS PELO MODELO +++===---
+
+Valor mínimo das vendas previstas:[0.   1.38]
+Valor da mediana das vendas previstas:[5.708734 1.38    ]
+Valor máximo das vendas previstas:[6235.076704    1.38    ]
+Quantidade de previsões negativas (tranformadas para zero): 55 (0.19% do total).
+
+Relação das frequências dos valores previstos:
+     -=+ valores mais frequentes +=-
+0          1   
+4.739471   1.38    9329
+5.708734   1.38    2375
+4.805924   1.38     642
+6.175019   1.38     455
+5.454498   1.38     397
+5.047799   1.38     285
+49.056147  1.38     254
+5.306090   1.38     254
+5.375552   1.38     207
+8.918701   1.38     196
+     -=+ valores com menor frequência +=-
+0          1   
+65.537865  1.38    1
+65.453033  1.38    1
+65.120309  1.38    1
+65.425758  1.38    1
+65.397306  1.38    1
+65.385664  1.38    1
+65.267147  1.38    1
+65.134109  1.38    1
+65.122402  1.38    1
+93.702473  1.38    1
+
+################ FINAL DE REGISTRO - MODELO 20240625-0857 ################
+
+
+################ INÍCIO DE REGISTRO - MODELO 20240625-0922 ################
+
+Registro gerado em 25-06-2024 às 09:25.
+Modelo utilizado salvo como 'modelo20240625-0922.json
+Dados ***sem normalização***
+Período de análise entre 17-02-2016 e 15-08-2017. 
+Atenção: análise realizada com outliers presentes nas variáveis!
+
+Scores obtidos no controle: [0.7449962599746789, 1.1165785279808296, 1.0596003152636737, 0.6554496506004307, 0.6849243938626918, 0.6962543535568495, 0.6990092125788061, 0.7025554176092949, 0.7132425217400509, 0.7048236736629742]
+Média dos scores obtidos no controle:[0.777743]
+Mediana dos scores obtidos no controle:[0.70369]
+Melhor score obtido no controle:[0.65545]
+
+Features utilizadas no modelo e seus respectivos impactos:
+     variável  importância
+   sales_lag1     0.486863
+   sales_lag5     0.157116
+  sales_lag15     0.115043
+  sales_lag10     0.071225
+        diff1     0.036333
+        diff5     0.035006
+       diff10     0.029240
+       diff15     0.021249
+      f_local     0.016101
+    store_nbr     0.007484
+     gasolina     0.005524
+   mes_do_ano     0.004734
+dia_da_semana     0.003877
+       family     0.003261
+   f_nacional     0.002456
+         pgto     0.002434
+  onpromotion     0.002054
+
+Não foram identificadas features sem importância. 
+
+Dataset timeseries split em 10 subconjuntos.
+Tamanho de teste para cada split: 26730 observações (dias?)
+
+Parâmetros do modelo:
+           base_score: 0.5
+              booster: gbtree
+         n_estimators: 1000
+early_stopping_rounds: 100
+            objective: reg:squarederror
+            max_depth: 4
+        learning_rate: 0.01
+   enable_categorical: True
+               device: gpu
+  validade_parameters: True
+
+ ---===+++ ANÁLISE DAS PREVISÕES REALIZADAS PELO MODELO +++===---
+
+Valor mínimo das vendas previstas:[0.]
+Valor da mediana das vendas previstas:[6.423457]
+Valor máximo das vendas previstas:[7359.8027]
+Quantidade de previsões negativas (tranformadas para zero): 5 (0.02% do total).
+
+Relação das frequências dos valores previstos:
+     -=+ valores mais frequentes +=-
+0       
+4.043407    2895
+4.181663    2562
+4.245910    1149
+4.384165     724
+4.353126     499
+4.598207     461
+4.800709     276
+4.633566     263
+4.528438     227
+4.769670     208
+     -=+ valores com menor frequência +=-
+0          
+50.035168      1
+50.050411      1
+50.085415      1
+50.092625      1
+50.129322      1
+50.137379      1
+50.143005      1
+50.150192      1
+50.154602      1
+7359.802734    1
+
+################ FINAL DE REGISTRO - MODELO 20240625-0922 ################
+
+
+################ INÍCIO DE REGISTRO - MODELO 20240625-0932 ################
+
+Registro gerado em 25-06-2024 às 09:35.
+Modelo utilizado salvo como 'modelo20240625-0932.json
+Dados ***sem normalização***
+Período de análise entre 17-02-2016 e 15-08-2017. 
+Análise realizada sem presença de outliers nas variáveis.
+
+Scores obtidos no controle: [0.7645501569986114, 0.7286906504253713, 0.678582551084418, 0.6722958908085432, 0.6950955321842026, 0.7087464388496327, 0.6811365029234305, 0.6828423563299502, 0.7046352904830933, 0.7032080736759816]
+Média dos scores obtidos no controle:[0.701978]
+Mediana dos scores obtidos no controle:[0.699152]
+Melhor score obtido no controle:[0.672296]
+
+Features utilizadas no modelo e seus respectivos impactos:
+     variável  importância
+   sales_lag1     0.520505
+   sales_lag5     0.177624
+  sales_lag15     0.108830
+  sales_lag10     0.069555
+        diff1     0.037696
+        diff5     0.030589
+       diff10     0.023077
+       diff15     0.017056
+       family     0.002786
+    store_nbr     0.002343
+   mes_do_ano     0.002209
+dia_da_semana     0.001994
+         pgto     0.001806
+     gasolina     0.001242
+  onpromotion     0.001111
+   f_nacional     0.000942
+   f_regional     0.000636
+      f_local     0.000000
+      cluster     0.000000
+   store_type     0.000000
+      feriado     0.000000
+
+Features sem importância: ['store_type' 'cluster' 'f_local' 'feriado']
+
+Dataset timeseries split em 10 subconjuntos.
+Tamanho de teste para cada split: 26730 observações (dias?)
+
+Parâmetros do modelo:
+           base_score: 0.5
+              booster: gbtree
+         n_estimators: 1000
+early_stopping_rounds: 100
+            objective: reg:squarederror
+            max_depth: 4
+        learning_rate: 0.01
+   enable_categorical: True
+               device: gpu
+  validade_parameters: True
+
+ ---===+++ ANÁLISE DAS PREVISÕES REALIZADAS PELO MODELO +++===---
+
+Valor mínimo das vendas previstas:[0.]
+Valor da mediana das vendas previstas:[6.303624]
+Valor máximo das vendas previstas:[7186.361]
+Quantidade de previsões negativas (tranformadas para zero): 2 (0.01% do total).
+
+Relação das frequências dos valores previstos:
+     -=+ valores mais frequentes +=-
+0       
+4.141259    1761
+4.110393    1657
+4.156713    1477
+4.129725     878
+4.160592     606
+4.230980     514
+4.187580     303
+4.139667     277
+4.503612     270
+4.607866     237
+     -=+ valores com menor frequência +=-
+0          
+36.323891      1
+36.370075      1
+36.378204      1
+36.384396      1
+36.416855      1
+36.419960      1
+36.480930      1
+36.485157      1
+36.488415      1
+7186.360840    1
+
+################ FINAL DE REGISTRO - MODELO 20240625-0932 ################
+
+
+################ INÍCIO DE REGISTRO - MODELO 20240625-0936 ################
+
+Registro gerado em 25-06-2024 às 09:41.
+Modelo utilizado salvo como 'modelo20240625-0936.json
+Dados ***sem normalização***
+Período de análise entre 17-02-2016 e 15-08-2017. 
+Análise realizada sem presença de outliers nas variáveis.
+
+Scores obtidos no controle: [0.7594928795428513, 0.737740268491146, 0.6811693998420316, 0.6684666214994268, 0.6871452832877206, 0.6936636343993435, 0.6882187232511675, 0.6806709139913377, 0.7137514622033743, 0.7022294830503155]
+Média dos scores obtidos no controle:[0.701255]
+Mediana dos scores obtidos no controle:[0.690941]
+Melhor score obtido no controle:[0.668467]
+
+Features utilizadas no modelo e seus respectivos impactos:
+     variável  importância
+   sales_lag1     0.513555
+   sales_lag5     0.180648
+  sales_lag15     0.108983
+  sales_lag10     0.069933
+        diff1     0.037958
+        diff5     0.030735
+       diff10     0.023020
+       diff15     0.016623
+       family     0.002865
+    store_nbr     0.002348
+   mes_do_ano     0.002182
+dia_da_semana     0.002056
+         pgto     0.001814
+     mmovel10     0.001330
+  onpromotion     0.001126
+     gasolina     0.001110
+      mmovel1     0.001054
+   f_nacional     0.000965
+   f_regional     0.000831
+      mmovel5     0.000805
+     mmovel15     0.000059
+      f_local     0.000000
+      cluster     0.000000
+   store_type     0.000000
+      feriado     0.000000
+
+Features sem importância: ['store_type' 'cluster' 'f_local' 'feriado']
+
+Dataset timeseries split em 10 subconjuntos.
+Tamanho de teste para cada split: 26730 observações (dias?)
+
+Parâmetros do modelo:
+           base_score: 0.5
+              booster: gbtree
+         n_estimators: 1000
+early_stopping_rounds: 100
+            objective: reg:squarederror
+            max_depth: 4
+        learning_rate: 0.01
+   enable_categorical: True
+               device: gpu
+  validade_parameters: True
+
+ ---===+++ ANÁLISE DAS PREVISÕES REALIZADAS PELO MODELO +++===---
+
+Valor mínimo das vendas previstas:[0.]
+Valor da mediana das vendas previstas:[6.14572]
+Valor máximo das vendas previstas:[7175.9443]
+Quantidade de previsões negativas (tranformadas para zero): 2 (0.01% do total).
+
+Relação das frequências dos valores previstos:
+     -=+ valores mais frequentes +=-
+0       
+4.074170    1578
+4.033064    1504
+4.270244    1133
+4.185027     710
+4.345685     505
+4.226133     423
+4.144189     313
+4.114618     297
+4.347755     295
+4.947096     257
+     -=+ valores com menor frequência +=-
+0          
+34.199490      1
+34.210289      1
+34.215107      1
+34.266857      1
+34.318756      1
+34.321362      1
+34.321918      1
+34.322701      1
+34.326290      1
+7175.944336    1
+
+################ FINAL DE REGISTRO - MODELO 20240625-0936 ################
+
+
+################ INÍCIO DE REGISTRO - MODELO 20240625-0942 ################
+
+Registro gerado em 25-06-2024 às 09:47.
+Modelo utilizado salvo como 'modelo20240625-0942.json
+Dados ***sem normalização***
+Período de análise entre 17-02-2016 e 15-08-2017. 
+Análise realizada sem presença de outliers nas variáveis.
+
+Scores obtidos no controle: [0.7565434276647172, 1.0242249918177224, 0.6743053321177194, 0.660994797098733, 0.6892393505421366, 0.6892252682056478, 0.688379644086166, 0.6784990250292618, 0.7023326020020471, 0.7052292490684363]
+Média dos scores obtidos no controle:[0.726897]
+Mediana dos scores obtidos no controle:[0.689232]
+Melhor score obtido no controle:[0.660995]
+
+Features utilizadas no modelo e seus respectivos impactos:
+     variável  importância
+   sales_lag1     0.518685
+   sales_lag5     0.182455
+  sales_lag15     0.110568
+  sales_lag10     0.067945
+        diff1     0.039056
+        diff5     0.030668
+       diff10     0.022501
+       diff15     0.016989
+       family     0.003237
+    store_nbr     0.002514
+dia_da_semana     0.001864
+   mes_do_ano     0.001785
+         pgto     0.001733
+
+Não foram identificadas features sem importância. 
+
+Dataset timeseries split em 10 subconjuntos.
+Tamanho de teste para cada split: 26730 observações (dias?)
+
+Parâmetros do modelo:
+           base_score: 0.5
+              booster: gbtree
+         n_estimators: 1000
+early_stopping_rounds: 100
+            objective: reg:squarederror
+            max_depth: 4
+        learning_rate: 0.01
+   enable_categorical: True
+               device: gpu
+  validade_parameters: True
+
+ ---===+++ ANÁLISE DAS PREVISÕES REALIZADAS PELO MODELO +++===---
+
+Valor mínimo das vendas previstas:[0.]
+Valor da mediana das vendas previstas:[5.940178]
+Valor máximo das vendas previstas:[7228.5483]
+Quantidade de previsões negativas (tranformadas para zero): 23 (0.08% do total).
+
+Relação das frequências dos valores previstos:
+     -=+ valores mais frequentes +=-
+0       
+4.077089    3574
+4.370395    2472
+4.112295    1166
+4.220538     649
+4.954268     460
+4.335929     374
+4.919802     231
+4.506650     200
+4.096187     187
+4.660961     184
+     -=+ valores com menor frequência +=-
+0          
+41.387032      1
+41.401066      1
+41.406448      1
+41.407154      1
+41.411053      1
+41.456287      1
+41.458862      1
+41.460533      1
+41.469875      1
+7228.548340    1
+
+################ FINAL DE REGISTRO - MODELO 20240625-0942 ################
+
+
+################ INÍCIO DE REGISTRO - MODELO 20240625-0948 ################
+
+Registro gerado em 25-06-2024 às 09:54.
+Modelo utilizado salvo como 'modelo20240625-0948.json
+Dados ***sem normalização***
+Período de análise entre 17-02-2016 e 15-08-2017. 
+Análise realizada sem presença de outliers nas variáveis.
+
+Scores obtidos no controle: [0.766039123564108, 0.7424580213213557, 0.7007121776436426, 0.6998163535557254, 0.7130524633436669, 0.7199504796674854, 0.7362608275539138, 0.7289932045561462, 0.7393746657293601, 0.7420466488306615]
+Média dos scores obtidos no controle:[0.72887]
+Mediana dos scores obtidos no controle:[0.732627]
+Melhor score obtido no controle:[0.699816]
+
+Features utilizadas no modelo e seus respectivos impactos:
+   variável  importância
+ sales_lag1     0.544581
+ sales_lag5     0.167534
+sales_lag15     0.101850
+sales_lag10     0.069532
+      diff1     0.041379
+      diff5     0.033247
+     diff10     0.025227
+     diff15     0.016650
+
+Não foram identificadas features sem importância. 
+
+Dataset timeseries split em 10 subconjuntos.
+Tamanho de teste para cada split: 26730 observações (dias?)
+
+Parâmetros do modelo:
+           base_score: 0.5
+              booster: gbtree
+         n_estimators: 1000
+early_stopping_rounds: 100
+            objective: reg:squarederror
+            max_depth: 4
+        learning_rate: 0.01
+   enable_categorical: True
+               device: gpu
+  validade_parameters: True
+
+ ---===+++ ANÁLISE DAS PREVISÕES REALIZADAS PELO MODELO +++===---
+
+Valor mínimo das vendas previstas:[0.]
+Valor da mediana das vendas previstas:[5.45624]
+Valor máximo das vendas previstas:[5973.65]
+Quantidade de previsões negativas (tranformadas para zero): 33 (0.12% do total).
+
+Relação das frequências dos valores previstos:
+     -=+ valores mais frequentes +=-
+0        
+4.666965     10119
+5.456240      1837
+5.373806       493
+4.830958       465
+5.045938       371
+7.115965       347
+5.288817       319
+4.906864       210
+44.473522      206
+6.174884       171
+     -=+ valores com menor frequência +=-
+0        
+71.908264    1
+71.897614    1
+71.737267    1
+71.870323    1
+71.845070    1
+71.827103    1
+71.816238    1
+71.761551    1
+71.761055    1
+88.594490    1
+
+################ FINAL DE REGISTRO - MODELO 20240625-0948 ################
+
+
+################ INÍCIO DE REGISTRO - MODELO 20240625-1023 ################
+
+Registro gerado em 25-06-2024 às 10:59.
+Modelo utilizado salvo como 'modelo20240625-1023.json
+Dados ***sem normalização***
+Período de análise entre 17-02-2016 e 15-08-2017. 
+Análise realizada sem presença de outliers nas variáveis.
+
+Scores obtidos no controle: [1.0404792097272852, 0.7028042727382517, 0.7079362180630953, 0.7153912114939415, 1.0320622337412966, 0.6559162774938347, 0.7079264603227172, 0.6952229150113071, 0.6955166696602495, 0.7177833958313782, 0.6827960677798707, 0.6641881599625017, 0.6855722113805343, 0.7026152246219489, 0.6921373444847203]
+Média dos scores obtidos no controle:[0.73989]
+Mediana dos scores obtidos no controle:[0.702615]
+Melhor score obtido no controle:[0.655916]
+
+Features utilizadas no modelo e seus respectivos impactos:
+   variável  importância
+ sales_lag1     0.531455
+ sales_lag5     0.177936
+sales_lag15     0.105935
+sales_lag10     0.070676
+      diff1     0.038187
+      diff5     0.029174
+     diff10     0.022331
+     diff15     0.016701
+     family     0.003261
+  store_nbr     0.002794
+ mes_do_ano     0.001550
+
+Não foram identificadas features sem importância. 
+
+Dataset timeseries split em 15 subconjuntos.
+Tamanho de teste para cada split: 1782 observações (dias?)
+
+Parâmetros do modelo:
+           base_score: 0.5
+              booster: gbtree
+         n_estimators: 1000
+early_stopping_rounds: 100
+            objective: reg:squarederror
+            max_depth: 4
+        learning_rate: 0.01
+   enable_categorical: True
+               device: gpu
+  validade_parameters: True
+
+ ---===+++ ANÁLISE DAS PREVISÕES REALIZADAS PELO MODELO +++===---
+
+Valor mínimo das vendas previstas:[0.]
+Valor da mediana das vendas previstas:[6.733364]
+Valor máximo das vendas previstas:[6240.8784]
+Quantidade de previsões negativas (tranformadas para zero): 16 (0.06% do total).
+
+Relação das frequências dos valores previstos:
+     -=+ valores mais frequentes +=-
+0       
+3.830656    1857
+3.972896    1732
+4.410847     911
+4.079722     656
+4.331469     442
+4.669805     437
+3.865696     311
+4.138446     277
+4.776631     220
+4.040473     217
+     -=+ valores com menor frequência +=-
+0          
+34.381275      1
+34.494026      1
+34.385159      1
+34.392448      1
+34.399151      1
+34.422688      1
+34.450157      1
+34.452923      1
+34.477493      1
+6240.878418    1
+
+################ FINAL DE REGISTRO - MODELO 20240625-1023 ################
+
+
+################ INÍCIO DE REGISTRO - MODELO 20240625-1059 ################
+
+Registro gerado em 25-06-2024 às 11:03.
+Modelo utilizado salvo como 'modelo20240625-1059.json
+Dados ***sem normalização***
+Período de análise entre 17-02-2016 e 15-08-2017. 
+Análise realizada sem presença de outliers nas variáveis.
+
+Scores obtidos no controle: [1.0404792097272852, 0.5489975003557426, 0.5213122248349358, 0.5150480561625946, 1.0320622337412966, 0.470829738160592, 0.5293841199437269, 0.5071243078319911, 0.5136890075103964, 0.5187563753491428, 0.49817146867350204, 0.4832349069034292, 0.48829506264549705, 0.5137447767607309, 0.49853962734702995]
+Média dos scores obtidos no controle:[0.578645]
+Mediana dos scores obtidos no controle:[0.513745]
+Melhor score obtido no controle:[0.47083]
+
+Features utilizadas no modelo e seus respectivos impactos:
+   variável  importância
+ sales_lag1     0.536589
+ sales_lag5     0.175144
+sales_lag15     0.100161
+sales_lag10     0.069258
+      diff1     0.043462
+      diff5     0.028639
+     diff10     0.023944
+     diff15     0.015123
+     family     0.003315
+  store_nbr     0.002761
+ mes_do_ano     0.001604
+
+Não foram identificadas features sem importância. 
+
+Dataset timeseries split em 15 subconjuntos.
+Tamanho de teste para cada split: 1782 observações (dias?)
+
+Parâmetros do modelo:
+           base_score: 0.5
+              booster: gbtree
+         n_estimators: 1500
+early_stopping_rounds: 100
+            objective: reg:squarederror
+            max_depth: 4
+        learning_rate: 0.01
+   enable_categorical: True
+               device: gpu
+  validade_parameters: True
+
+ ---===+++ ANÁLISE DAS PREVISÕES REALIZADAS PELO MODELO +++===---
+
+Valor mínimo das vendas previstas:[0.]
+Valor da mediana das vendas previstas:[6.110867]
+Valor máximo das vendas previstas:[6241.248]
+Quantidade de previsões negativas (tranformadas para zero): 75 (0.26% do total).
+
+Relação das frequências dos valores previstos:
+     -=+ valores mais frequentes +=-
+0       
+1.209960    717
+2.760765    428
+2.386442    383
+2.535556    314
+2.894340    241
+1.472599    226
+2.787513    159
+1.243093    151
+1.975147    144
+1.471101    144
+     -=+ valores com menor frequência +=-
+0          
+13.616623      1
+13.617383      1
+13.619601      1
+13.624425      1
+13.628298      1
+13.633602      1
+13.646470      1
+13.646995      1
+13.648309      1
+6241.248047    1
+
+################ FINAL DE REGISTRO - MODELO 20240625-1059 ################
+
+
+################ INÍCIO DE REGISTRO - MODELO 20240625-1105 ################
+
+Registro gerado em 25-06-2024 às 11:07.
+Modelo utilizado salvo como 'modelo20240625-1105.json
+Dados ***sem normalização***
+Período de análise entre 17-02-2016 e 15-08-2017. 
+Análise realizada sem presença de outliers nas variáveis.
+
+Scores obtidos no controle: [0.49817146867350204, 0.4832349069034292, 0.48829506264549705, 0.5137447767607309, 0.49853962734702995]
+Média dos scores obtidos no controle:[0.496397]
+Mediana dos scores obtidos no controle:[0.498171]
+Melhor score obtido no controle:[0.483235]
+
+Features utilizadas no modelo e seus respectivos impactos:
+   variável  importância
+ sales_lag1     0.536589
+ sales_lag5     0.175144
+sales_lag15     0.100161
+sales_lag10     0.069258
+      diff1     0.043462
+      diff5     0.028639
+     diff10     0.023944
+     diff15     0.015123
+     family     0.003315
+  store_nbr     0.002761
+ mes_do_ano     0.001604
+
+Não foram identificadas features sem importância. 
+
+Dataset timeseries split em 5 subconjuntos.
+Tamanho de teste para cada split: 1782 observações (dias?)
+
+Parâmetros do modelo:
+           base_score: 0.5
+              booster: gbtree
+         n_estimators: 1500
+early_stopping_rounds: 100
+            objective: reg:squarederror
+            max_depth: 4
+        learning_rate: 0.01
+   enable_categorical: True
+               device: gpu
+  validade_parameters: True
+
+ ---===+++ ANÁLISE DAS PREVISÕES REALIZADAS PELO MODELO +++===---
+
+Valor mínimo das vendas previstas:[0.]
+Valor da mediana das vendas previstas:[6.110867]
+Valor máximo das vendas previstas:[6241.248]
+Quantidade de previsões negativas (tranformadas para zero): 75 (0.26% do total).
+
+Relação das frequências dos valores previstos:
+     -=+ valores mais frequentes +=-
+0       
+1.209960    717
+2.760765    428
+2.386442    383
+2.535556    314
+2.894340    241
+1.472599    226
+2.787513    159
+1.243093    151
+1.975147    144
+1.471101    144
+     -=+ valores com menor frequência +=-
+0          
+13.616623      1
+13.617383      1
+13.619601      1
+13.624425      1
+13.628298      1
+13.633602      1
+13.646470      1
+13.646995      1
+13.648309      1
+6241.248047    1
+
+################ FINAL DE REGISTRO - MODELO 20240625-1105 ################
+
+
+################ INÍCIO DE REGISTRO - MODELO 20240625-1109 ################
+
+Registro gerado em 25-06-2024 às 11:11.
+Modelo utilizado salvo como 'modelo20240625-1109.json
+Dados ***sem normalização***
+Período de análise entre 17-02-2016 e 15-08-2017. 
+Análise realizada sem presença de outliers nas variáveis.
+
+Scores obtidos no controle: [0.507760916333833, 0.5087083632649977, 0.5037184673056306, 0.5102397905676215, 0.5037324079939435]
+Média dos scores obtidos no controle:[0.506832]
+Mediana dos scores obtidos no controle:[0.507761]
+Melhor score obtido no controle:[0.503718]
+
+Features utilizadas no modelo e seus respectivos impactos:
+   variável  importância
+ sales_lag1     0.526237
+ sales_lag5     0.173823
+sales_lag15     0.106758
+sales_lag10     0.072471
+      diff1     0.043354
+      diff5     0.029577
+     diff10     0.025256
+     diff15     0.014875
+     family     0.003060
+  store_nbr     0.002901
+ mes_do_ano     0.001686
+
+Não foram identificadas features sem importância. 
+
+Dataset timeseries split em 5 subconjuntos.
+Tamanho de teste para cada split: 12474 observações (dias?)
+
+Parâmetros do modelo:
+           base_score: 0.5
+              booster: gbtree
+         n_estimators: 1500
+early_stopping_rounds: 100
+            objective: reg:squarederror
+            max_depth: 4
+        learning_rate: 0.01
+   enable_categorical: True
+               device: gpu
+  validade_parameters: True
+
+ ---===+++ ANÁLISE DAS PREVISÕES REALIZADAS PELO MODELO +++===---
+
+Valor mínimo das vendas previstas:[0.]
+Valor da mediana das vendas previstas:[5.891928]
+Valor máximo das vendas previstas:[6254.192]
+Quantidade de previsões negativas (tranformadas para zero): 103 (0.36% do total).
+
+Relação das frequências dos valores previstos:
+     -=+ valores mais frequentes +=-
+0       
+1.159359    758
+2.768530    739
+2.542801    491
+2.440600    276
+1.436037    244
+3.045206    238
+1.413581    200
+3.020939    171
+4.151975    157
+2.887426    128
+     -=+ valores com menor frequência +=-
+0          
+16.113464      1
+16.116837      1
+16.124256      1
+16.132212      1
+16.139690      1
+16.141617      1
+16.143129      1
+16.144543      1
+16.145985      1
+6254.191895    1
+
+################ FINAL DE REGISTRO - MODELO 20240625-1109 ################
+
+
+################ INÍCIO DE REGISTRO - MODELO 20240625-1116 ################
+
+Registro gerado em 25-06-2024 às 11:20.
+Modelo utilizado salvo como 'modelo20240625-1116.json
+Dados ***sem normalização***
+Período de análise entre 16-08-2015 e 15-08-2017. 
+Análise realizada sem presença de outliers nas variáveis.
+
+Scores obtidos no controle: [0.5004063179135265, 0.4927044945473815, 0.4958557835105521, 0.4948876367607684, 0.48829689222218936]
+Média dos scores obtidos no controle:[0.49443]
+Mediana dos scores obtidos no controle:[0.494888]
+Melhor score obtido no controle:[0.488297]
+
+Features utilizadas no modelo e seus respectivos impactos:
+     variável  importância
+   sales_lag1     0.531005
+   sales_lag5     0.185889
+  sales_lag10     0.077556
+  sales_lag15     0.075341
+        diff1     0.043908
+        diff5     0.032288
+       diff10     0.024415
+       diff15     0.015280
+       family     0.002732
+dia_da_semana     0.002632
+    store_nbr     0.002521
+         pgto     0.002295
+  onpromotion     0.001646
+   mes_do_ano     0.001475
+   f_nacional     0.001016
+
+Não foram identificadas features sem importância. 
+
+Dataset timeseries split em 5 subconjuntos.
+Tamanho de teste para cada split: 12474 observações (dias?)
+
+Parâmetros do modelo:
+           base_score: 0.5
+              booster: gbtree
+         n_estimators: 1500
+early_stopping_rounds: 100
+            objective: reg:squarederror
+            max_depth: 4
+        learning_rate: 0.01
+   enable_categorical: True
+               device: gpu
+  validade_parameters: True
+
+ ---===+++ ANÁLISE DAS PREVISÕES REALIZADAS PELO MODELO +++===---
+
+Valor mínimo das vendas previstas:[0.]
+Valor da mediana das vendas previstas:[5.709057]
+Valor máximo das vendas previstas:[6593.6333]
+Quantidade de previsões negativas (tranformadas para zero): 209 (0.73% do total).
+
+Relação das frequências dos valores previstos:
+     -=+ valores mais frequentes +=-
+0       
+2.202059    782
+1.195942    619
+2.209239    429
+1.785991    240
+0.000000    209
+1.478202    193
+2.683125    176
+2.575761    153
+3.394616    141
+4.899456    126
+     -=+ valores com menor frequência +=-
+0          
+14.562480      1
+14.567833      1
+14.576189      1
+14.578864      1
+14.588828      1
+14.592051      1
+14.597160      1
+14.598542      1
+14.607526      1
+6593.633301    1
+
+################ FINAL DE REGISTRO - MODELO 20240625-1116 ################
+
+
