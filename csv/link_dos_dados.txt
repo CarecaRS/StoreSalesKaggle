@@ -1,0 +1,3 @@
+Download diretamente pelo Kaggle - https://www.kaggle.com/competitions/store-sales-time-series-forecasting/data
+Os arquivos .csv devem ser armazenados nesta pasta para que o script rode perfeitamente.
+Não realizei upload dos arquivos pelo tamanho, e eles podem ser facilmente obtidos pelo Kaggle.
